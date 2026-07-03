@@ -3,62 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alby Manoj | Resume</title>
+    <title>Alby Manoj | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <header>
-        <h1> MY RESUME : Alby Manoj </h1>
-    </header>
-    
+    <!-- Navigation Bar -->
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contacts</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="logo">AM<span>.</span></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
     
+    <!-- Creative Hero Profile Section -->
+    <header class="hero">
+        <div class="hero-container">
+            <div class="profile-card">
+                <!-- Dynamically fetches your actual profile picture from GitHub -->
+                <img src="https://github.com/CHERI-tech.png" alt="Alby Manoj Profile Picture" class="profile-img">
+                <h2>Alby Manoj</h2>
+                <p>Computer Science Engineering Student</p>
+                <div class="social-links">
+                    <a href="https://github.com/CHERI-tech" target="_blank" class="github-badge">GitHub Profile</a>
+                </div>
+            </div>
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Alby Manoj</span></h1>
+                <p class="tagline">Building modern full-stack web architectures and software applications.</p>
+                <p class="bio">Welcome to my engineering portfolio. I specialize in designing structured, interactive front-ends, logic-driven systems, and tracking clean code execution live via Git.</p>
+                <a href="#projects" class="cta-btn">View My Work</a>
+            </div>
+        </div>
+    </header>
+    
     <main>
-        <!-- Fixed: Lowercase ID matching the navbar links -->
+        <!-- Projects Section (Sourced from GitHub) -->
         <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project-container">
-                <ol>
-                    <li>DEF</li>
-                    <li>GHI</li>
-                </ol>
+            <h2>Featured Projects</h2>
+            <p class="section-subtitle">Repositories hosted on my GitHub profile</p>
+            <div class="project-grid">
+                
+                <div class="project-card">
+                    <div class="project-icon">📂</div>
+                    <h3>MERN-STACK-</h3>
+                    <p>Full-stack web development training architecture including clean, modular component structures for interactive interfaces.</p>
+                    <a href="https://github.com/CHERI-tech/MERN-STACK-" target="_blank" class="repo-link">View Repository →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🛒</div>
+                    <h3>Smart Online Grocery Mart</h3>
+                    <p>A comprehensive web platform incorporating automated pantry management algorithms, waste minimization parameters, and real-time validation layers.</p>
+                    <a href="https://github.com/CHERI-tech" target="_blank" class="repo-link">View Repository →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🤖</div>
+                    <h3>Raspberry Pi AI Assistant</h3>
+                    <p>A hardware-integrated logic framework engineered in Python on Raspberry Pi to execute automation tasks and contextual responses.</p>
+                    <a href="https://github.com/CHERI-tech" target="_blank" class="repo-link">View Repository →</a>
+                </div>
+
             </div>
         </section>
 
-        <!-- Fixed: Lowercase ID and cleaned up list formatting -->
+        <!-- Technical Skills Section -->
         <section id="skills">
-            <h2>Technical Skills</h2>
+            <h2>Technical Stack</h2>
             <ul class="skills-list">
                 <li>
                     <img src="https://pngdownload.io/wp-content/uploads/2023/12/HTML5-Logo-PNG-Symbol-for-Web-Development-Transparent-jpg.webp" alt="HTML Icon">
-                    <span>HTML</span>
+                    <span>HTML5</span>
                 </li>
                 <li>
                     <img src="https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo-2011.png" alt="CSS Icon">
-                    <span>CSS</span>
+                    <span>CSS3</span>
                 </li>
                 <li>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl7iuikVlI5q6zhjaAzwUVXnkUSUa5kxiBHt_0tENWLQ&s=10" alt="JavaScript Icon">
                     <span>JavaScript</span>
                 </li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Icon">
+                    <span>Python</span>
+                </li>
             </ul>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact">
-            <h2>Contact Me</h2>
+            <h2>Let's Connect</h2>
             <div class="contact-card">
-                <p><strong>E-mail:</strong> albymanoj30@gmail.com</p>
+                <p>Have an interesting project or engineering concept to discuss? Drop an email or trace my development stream live on GitHub.</p>
+                <div class="contact-details">
+                    <p><strong>Email:</strong> <a href="mailto:albymanoj30@gmail.com">albymanoj30@gmail.com</a></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/CHERI-tech" target="_blank">github.com/CHERI-tech</a></p>
+                </div>
             </div>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2026 Alby Manoj. Built using HTML, CSS, and Git.</p>
+    </footer>
    
 </body>
 </html>
